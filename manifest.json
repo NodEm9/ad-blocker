@@ -1,0 +1,22 @@
+{
+  "name": "Dongo Adblocker",
+  "version": "1.0",
+  "description": "Dongo Adblocker Extension",
+  "permissions": [
+    "webRequest",
+    "declarativeNetRequest",
+    "declarativeContent"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon_16x16.png",
+    "48": "icons/icon_48x48.png",
+    "128": "icons/icon_128x128.png"
+  },
+  "manifest_version": 3
+}
