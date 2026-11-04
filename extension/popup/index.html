@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dongo controls</title>
+  <link rel="stylesheet" href="popup.css" />
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <img src="../icons/icon_48x48.png" width="38" height="38" alt="" />
+      <div>
+        <h1>Dongo</h1>
+        <p>Local browser controls</p>
+      </div>
+    </header>
+
+    <section class="setting" aria-labelledby="ads-label">
+      <div class="copy">
+        <label id="ads-label" for="ads-toggle">Block known ad requests</label>
+        <p>Filters a limited list of third-party ad hosts.</p>
+      </div>
+      <input id="ads-toggle" type="checkbox" role="switch" disabled />
+    </section>
+
+    <section class="setting" aria-labelledby="gmail-label">
+      <div class="copy">
+        <label id="gmail-label" for="gmail-toggle">Gmail screen privacy</label>
+        <p>Optional: blur message bodies in Gmail. Not account security.</p>
+      </div>
+      <input id="gmail-toggle" type="checkbox" role="switch" disabled />
+    </section>
+
+    <p class="notice">No browsing history or email contents are sent to Dongo servers. Gmail concealment only changes what you see on this screen.</p>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
