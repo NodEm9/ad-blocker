@@ -1,7 +1,3 @@
-/* Gmail-specific, off-by-default, cosmetic concealment of message bodies.
-   Gmail can change its DOM/classes without notice. This is NOT access control.
-   The message remains in the browser's DOM, may remain available to assistive
-   technology, and could appear briefly before the extension initializes. */
 html[data-dongo-gmail-private] .a3s {
   filter: blur(16px) !important;
   -webkit-user-select: none !important;

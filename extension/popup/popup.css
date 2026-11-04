@@ -1,20 +1,126 @@
-:root {color-scheme: light; font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;}
-* {box-sizing:border-box}
-body {width:350px; min-height:315px; margin:0; color:#0b1f3b; background:#f5f7fb}
-.app {padding:18px}
-.header {display:flex; align-items:center; gap:12px; margin-bottom:20px}
-h1 {margin:0; font-size:20px; letter-spacing:-.5px}
-.header p {margin:0; color:#59687b; font-size:12px}
-.setting {display:flex; align-items:center; justify-content:space-between; gap:16px; padding:15px 0; border-top:1px solid #dce2e9}
-.copy {min-width:0}
-label {font-size:13px; font-weight:700}
-.copy p {margin:5px 0 0; font-size:12px; color:#5b687a}
-input[type=checkbox] {appearance:none; width:43px; height:25px; border-radius:30px; background:#bdc8d3; position:relative; flex-shrink:0; cursor:pointer; transition:background .18s}
-input[type=checkbox]::before {content:""; background:white; position:absolute; width:19px; height:19px; border-radius:50%; top:3px; left:3px; box-shadow:0 1px 2px #0b1f3b3b; transition:transform .18s}
-input[type=checkbox]:checked {background:#0b6eae}
-input[type=checkbox]:checked::before {transform:translateX(18px)}
-input[type=checkbox]:disabled {opacity:.5; cursor:wait}
-input[type=checkbox]:focus-visible {outline:3px solid #d4af37; outline-offset:3px}
-.notice {background:#e6edf4; border-radius:9px; padding:10px 11px; margin:5px 0 0; font-size:11px; color:#445365}
-.status {font-size:12px; min-height:18px; margin:10px 0 0; color:#12673a}
-.status.error {color:#a52626}
+:root {
+	color-scheme: light;
+	font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+	box-sizing: border-box
+}
+
+body {
+	width: 350px;
+	min-height: 315px;
+	margin: 0;
+	color: #0b1f3b;
+	background: #f5f7fb
+}
+
+.app {
+	padding: 18px
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 20px
+}
+
+h1 {
+	margin: 0;
+	font-size: 20px;
+	letter-spacing: -.5px
+}
+
+.header p {
+	margin: 0;
+	color: #59687b;
+	font-size: 12px
+}
+
+.setting {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 15px 0;
+	border-top: 1px solid #dce2e9
+}
+
+.copy {
+	min-width: 0
+}
+
+label {
+	font-size: 13px;
+	font-weight: 700
+}
+
+.copy p {
+	margin: 5px 0 0;
+	font-size: 12px;
+	color: #5b687a
+}
+
+input[type=checkbox] {
+	appearance: none;
+	width: 43px;
+	height: 25px;
+	border-radius: 30px;
+	background: #bdc8d3;
+	position: relative;
+	flex-shrink: 0;
+	cursor: pointer;
+	transition: background .18s
+}
+
+input[type=checkbox]::before {
+	content: "";
+	background: white;
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	top: 3px;
+	left: 3px;
+	box-shadow: 0 1px 2px #0b1f3b3b;
+	transition: transform .18s
+}
+
+input[type=checkbox]:checked {
+	background: #0b6eae
+}
+
+input[type=checkbox]:checked::before {
+	transform: translateX(18px)
+}
+
+input[type=checkbox]:disabled {
+	opacity: .5;
+	cursor: wait
+}
+
+input[type=checkbox]:focus-visible {
+	outline: 3px solid #d4af37;
+	outline-offset: 3px
+}
+
+.notice {
+	background: #e6edf4;
+	border-radius: 9px;
+	padding: 10px 11px;
+	margin: 5px 0 0;
+	font-size: 11px;
+	color: #445365
+}
+
+.status {
+	font-size: 12px;
+	min-height: 18px;
+	margin: 10px 0 0;
+	color: #12673a
+}
+
+.status.error {
+	color: #a52626
+}
