@@ -2,7 +2,7 @@ import { execFileSync } from 'node:child_process'
 import { resolve } from 'node:path'
 
 const root = resolve('extension')
-const output = resolve('dongo-adblocker-1.1.0.zip')
+const output = resolve('dongo-adblocker-1.1.1.zip')
 
 const py = `from pathlib import Path\nfrom zipfile import ZipFile, ZIP_DEFLATED\nroot=Path(${JSON.stringify(
   root
