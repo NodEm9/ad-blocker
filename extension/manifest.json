@@ -3,7 +3,7 @@
   "name": "Dongo Adblocker",
   "short_name": "Dongo",
   "version": "1.1.0",
-  "description": "Block common advertising requests and optionally blur Gmail message bodies on your screen.",
+  "description": "Block selected advertising requests and optionally blur Gmail messages on your screen",
   "minimum_chrome_version": "120",
   "permissions": ["declarativeNetRequest", "storage"],
   "background": {
